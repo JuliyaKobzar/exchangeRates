@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2f3132;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.box__form {
+  max-width: 350px;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin: 20px;
+}
+.box__form-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  color: orange;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.calc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input__bit,
+.input__usd {
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+  text-decoration: none;
+  font-size: 18px;
+  height: 40px;
+  font-family: 'Fira Sans', sans-serif;
+}
+.btn__result {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: chocolate;
+  color: #fff;
+  font-size: 25px;
+  padding: 5px 0;
+}
+
+.input__bit::focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.input__usd::focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.result {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
